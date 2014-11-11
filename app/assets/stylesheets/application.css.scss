@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.ei-global-header {
+  background-color: #c50677;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 999;
+}
+.ei-global-header-content:after, .ei-global-user:after, .ei-global-quick-links:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.ei-global-header-content {
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 980px;
+}
+
+a:hover, a:active, a:after {
+    cursor: pointer;
+}
+.ei-global-logo {
+  background: url("/assets/bg-demo.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
+  display: block;
+  float: left;
+  height: 50px;
+  width: 110px;
+  margin-top: -18px;
+}
+a {
+  color: #70983c;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ei-global-search {
+  display: block;
+  float: right;
+}
+span.ei-is-hidden{
+  position: absolute;
+  top: 33px;
+  left:15px;
+}
